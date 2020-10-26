@@ -1,0 +1,35 @@
+{
+  "is_edit_mode": false,
+  "avatar": "img/man.svg",
+  "data": {
+    "id": 1,
+    "contact": {
+      "FirstName": "Umair",
+      "LastName": "Ramzan",
+      "PreferedName": "Umair",
+      "ContactNo": "0777671864",
+      "MobileNo": "0777671864",
+      "Email": "umairpersonalmail@gmail.com",
+      "Address": {
+        "No": "194/4/B",
+        "Street": "Bulugohattanna Road",
+        "Town": "Akurana",
+        "District": "Kandy",
+        "GSDivision": null,
+        "DSDivision": null,
+        "Longitude": null,
+        "Latitude": null
+      }
+    },
+    "NIC": "952413147V",
+    "DOB": "1995-08-28",
+    "Gender": "M",
+    "LastModified": "2019-09-16T14:04:08.336265Z",
+    "RegisteredDate": "1990-01-01",
+    "User": null,
+    "RegisteredByEmployee": null,
+    "AlternativeContact": null,
+    "Referee": null,
+    "BillingAddress": 1
+  }
+}

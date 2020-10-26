@@ -1,0 +1,37 @@
+version: '3'
+services: 
+          
+    royalmarketing:
+        build: 
+            context: .
+            dockerfile: dockerfile.prod   
+        environment:
+            DJANGO_SUPERUSER_PASSWORD: Admin@rib
+        volumes: 
+            - ./backend:/opt/app/backend/
+        ports:
+            - "81:80"
+        depends_on: 
+            - db
+        networks: 
+            - default
+
+    db: 
+        image: mysql
+        restart: always
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: ROYALMARKETINGDB
+            MYSQL_USER: rmuser
+            MYSQL_PASSWORD: rmpassword
+        volumes: 
+            - ./database:/var/lib/mysql
+        # ports:
+        #     - "5555:3306"
+        networks: 
+            - default
+
+networks: 
+    default:
+        driver: bridge
